@@ -1,5 +1,7 @@
 # Flask Versioning set up 
 
+[![Build Status](https://travis-ci.org/martinMutuma/flaskvershioning.svg?branch=master)](https://travis-ci.org/martinMutuma/flaskvershioning)
+
 >Flask 1.0.2
 >Python 3.7.1 (v3.7.1:260ec2c36a, Oct 20 2018, 14:05:16) [MSC v.1915 32 bit (Intel)]
 
