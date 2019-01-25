@@ -1,5 +1,7 @@
 venv/
-/__pycache__
-/v1/__pycache__
-/v2/__pycache__
-/.vscode    
+__pycache__/
+v1/__pycache__/
+v2/__pycache__/
+.vscode/ 
+app/__pycache__/
+

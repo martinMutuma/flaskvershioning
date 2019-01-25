@@ -1,3 +1,5 @@
+#mainpath/common.py
+#file Used to run the app
 from app import app
 
 
