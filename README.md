@@ -11,4 +11,4 @@ The idea is to achieve the folllowing style of url within a single app
 
 Uses flask blueprints to achieve that 
 
-Used this guide [Intro to Flask Blueprints]https://www.youtube.com/watch?v=K5LBC3hLl8w
+Used this guide [Intro to Flask Blueprints](https://www.youtube.com/watch?v=K5LBC3hLl8w)
