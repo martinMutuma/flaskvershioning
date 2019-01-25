@@ -9,3 +9,11 @@ install:
 # command to run tests
 script:
   - pytest
+
+#
+services:
+  - postgresql
+
+before_script:
+  - psql -c 'create database sto1;' -U postgres
+  
