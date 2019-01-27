@@ -15,8 +15,11 @@ services:
   - postgresql
 
 before_script:
+  - export FLASK_APP=common.py
+  - export FLASK_DEBUG=1
+  - export DB_CONNNECTION_STRING=postgresql://postgres:admin@localhost:5432/sto1
   - psql -c 'create database sto1;' -U postgres
-  - python common.py db init
-  - python common.py db migrate
-  - python common.py db upgrade
+  - python -m flask db init
+  - python -m db migrate
+  - python -m db upgrade
   
