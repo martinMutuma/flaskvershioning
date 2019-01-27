@@ -16,7 +16,7 @@ services:
 
 before_script:
   - psql -c 'create database sto1;' -U postgres
-  - python common.py db init
-  - python common.py db migrate
-  - python common.py db upgrade
+  - python flask db init
+  - python flask db migrate
+  - python flask db upgrade
   
