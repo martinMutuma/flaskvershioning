@@ -19,7 +19,7 @@ before_script:
   - export FLASK_DEBUG=1
   - export DB_CONNNECTION_STRING=postgresql://postgres:@localhost/sto1
   - psql -c 'create database sto1;' -U postgres
-  - python3 common.py db init
-  - python3 common.py db migrate
-  - python3 common.py db upgrade
+  - python3 -m flask db init
+  - python3 -m flask db migrate
+  - python3 -m flask db upgrade
   
