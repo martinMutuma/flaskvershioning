@@ -1,4 +1,2 @@
-import pytest
-
-def test_assert_true():
-    assert True
+import unittest
+from app import app

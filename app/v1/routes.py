@@ -1,7 +1,8 @@
-from app.v1.auth import Signup
+from app.v1.auth import Signup, Login
 from flask import Blueprint, url_for
 from flask import jsonify
 from flask_restful import Resource, Api
+from app.v1.auth import  authorize
 
 mod = Blueprint('api_v1', __name__)
 
@@ -20,11 +21,16 @@ class DefaultRoutes(Resource):
 
 
 class Test(Resource):
+    # @checkLogin
     def get(self):
+        authorize()
         return {"message": "This is test url"}, 200
 
 
 modApi = Api(mod)
 modApi.add_resource(DefaultRoutes, '/')
-modApi.add_resource(Signup, '/signup')
+modApi.add_resource(Signup, '/auth/signup')
+modApi.add_resource(Login, '/auth/login')
+
 modApi.add_resource(Test, '/test')
+
